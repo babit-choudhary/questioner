@@ -8,8 +8,12 @@ import Button from '@material-ui/core/Button';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import StepOne from './StepOne';
-import stepThree from './stepThree';
-import stepTwo from './stepTwo';
+import StepThree from './StepThree';
+import StepTwo from './StepTwo';
+import StepFour from './StepFour';
+import StepFive from './StepFive';
+import StepSix from './StepSix';
+import StepSeven from './StepSeven';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
@@ -39,9 +43,17 @@ function getStepContent(step) {
         case 0:
             return <StepOne/>;
         case 1:
-            return <stepTwo/>;
+            return <StepTwo/>;
         case 2:
-            return <stepThree/>;
+            return <StepThree/>;
+        case 3:
+            return <StepFour/>;
+        case 4:
+            return <StepFive/>;
+        case 5:
+            return <StepSix/>;
+        case 6:
+              return <StepSeven/>;
         default:
             return 'Unknown step';
     }

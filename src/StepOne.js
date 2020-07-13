@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {MDBInput} from "mdbreact";
+import { MDBInput } from "mdbreact";
 
 
 class StepOne extends Component {
@@ -16,11 +16,10 @@ class StepOne extends Component {
                 <MDBInput label="E-Mail" />
                 <MDBInput label="Wohnort" />
                 <select className="Sind Sie bereits Patient bei Günter Kränzlein?">
-          <option value="1">Ich bin bereits bei Günter Kränzlein Patient oder habe mich in seiner Praxis angemeldet</option>
-            <option value="2">Ich bin kein Patient von Günter Kränzlein und interessiere mich für das Ergebnis des Fragebogens</option>
-            
-        </select>
-    
+                    <option value="1">Ich bin bereits bei Günter Kränzlein Patient oder habe mich in seiner Praxis angemeldet</option>
+                    <option value="2">Ich bin kein Patient von Günter Kränzlein und interessiere mich für das Ergebnis des Fragebogens</option>
+                </select>
+
             </div>
         );
     }
