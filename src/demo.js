@@ -8,8 +8,17 @@ import Button from '@material-ui/core/Button';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import StepOne from './StepOne';
+<<<<<<< HEAD
 import StepTwo from './StepTwo';
 import StepThree from './StepThree';
+=======
+import StepThree from './StepThree';
+import StepTwo from './StepTwo';
+import StepFour from './StepFour';
+import StepFive from './StepFive';
+import StepSix from './StepSix';
+import StepSeven from './StepSeven';
+>>>>>>> 0dd77aed19cfb36c5e3f91a80ab9aa17243cb7d9
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
@@ -43,6 +52,7 @@ function getStepContent(step) {
             return <StepTwo/>;
         case 2:
             return <StepThree/>;
+<<<<<<< HEAD
 		 case 3:
             return <StepThree/>;
 		case 4:
@@ -50,6 +60,17 @@ function getStepContent(step) {
 		case 5:
             return <StepThree/>;			
 		default:
+=======
+        case 3:
+            return <StepFour/>;
+        case 4:
+            return <StepFive/>;
+        case 5:
+            return <StepSix/>;
+        case 6:
+              return <StepSeven/>;
+        default:
+>>>>>>> 0dd77aed19cfb36c5e3f91a80ab9aa17243cb7d9
             return 'Unknown step';
     }
 }
