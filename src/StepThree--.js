@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class stepTwo extends Component {
+class StepThree extends Component {
     render() {
         return (
             <div>
-                
+                Govind Thakur
             </div>
         );
     }
 }
 
-export default stepTwo;
+export default StepThree;
