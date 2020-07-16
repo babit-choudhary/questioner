@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {MDBInput} from "mdbreact";
-import { Textbox, Radiobox, Checkbox, Select, Textarea } from 'react-inputs-validation';
+//import { Textbox, Radiobox, Checkbox, Select, Textarea } from 'react-inputs-validation';
+import InputText from "./InputText";
 /* import {MDBSelect} from "mdbreact"; */
 
 
@@ -66,60 +67,24 @@ const data = [{
 		"label": "E-Mail",
         "required": "required",
 		"dropdown": []
-    }/* , 
+    } , 
 	{
 		
 		"type": "select",
-		"name": "email",                  
+		"name": "günter_kränzlein",                  
 		"classname": "text",
-		"placeholder": "Enter E-Mail",
-		"label": "E-Mail",
+		"placeholder": "Sind Sie bereits Patient bei Günter Kränzlein?",
+		"label": "Sind Sie bereits Patient bei Günter Kränzlein?",
 		"required": "required",	
       
-      "dropdownArr": [
-        "Ich bin bereits bei Günter Kränzlein Patient oder habe mich in seiner Praxis angemeldet",
-        "Ich bin kein Patient von Günter Kränzlein und interessiere mich für das Ergebnis des Fragebogens"
-       
+      "dropdown": [
+       {"text":"Ich bin bereits bei Günter Kränzlein Patient oder habe mich in seiner Praxis angemeldet","value":1},
+       {"text":"Ich bin kein Patient von Günter Kränzlein und interessiere mich für das Ergebnis des Fragebogens","value":2}       
       ]
-    } */
+    } 
  ]
  
-class InputText extends React.Component {
 
-  constructor(props) {
-    super(props);
-    this.changeValue = this.changeValue.bind(this);
-  }
-
-  changeValue() {
-    console.log('');
-  }
-
-  render() {
-   const { type, name, classname, placeholder, label, required, dropdownArr } = this.props.params;
-   
-   	if(type == 'select'){
-		return (
-			<MDBInput
-          options={dropdownArr}
-          label={label} name={name}
-					type={type}
-					required={required}
-        />
-				
-			
-		);
-	}else{
-		return (
-			<MDBInput label={label} name={name}
-					type={type}
-					required={required}
-					placeholder={placeholder}s  />
-		);
-	
-	}
-  }
-}
 
 class StepOne extends Component {
 	

@@ -7,7 +7,7 @@
   "dependencies": {
     "@material-ui/core": "latest",
     "react": "latest",
-    "react-dom": "latest",
-    "react-inputs-validation": "^4.4.5"
+    "react-dom": "latest"
+   
   }
 }
